@@ -53,6 +53,7 @@ public class App {
                 DataOutputStream dos = new DataOutputStream(bos);
 
                 while(!messageReceived.toLowerCase().equals("quit")) {
+                    System.out.println("Waiting for client input...");
                     messageReceived = dis.readUTF();
 
                     String retrievedCookie = c.getRandomCookie();
